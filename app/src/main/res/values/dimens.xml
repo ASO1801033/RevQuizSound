@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Title_size">60sp</dimen>
+    <dimen name="pyoko_width">300dp</dimen>
+    <dimen name="pyoko_height">500dp</dimen>
+    <dimen name="ansbutton_width">300dp</dimen>
+    <dimen name="questbutton_width">120dp</dimen>
+    <dimen name="questbutton_height">80dp</dimen>
+    <dimen name="questbutton_fontsize">23sp</dimen>
+    <dimen name="answerbutton_fontsize">23sp</dimen>
+    <dimen name="answerbutton_width">120dp</dimen>
+    <dimen name="answerbutton_height">80dp</dimen>
+    <dimen name="selectbutton_width">140dp</dimen>
+    <dimen name="selectbutton_height">80dp</dimen>
+    <dimen name="selectbutton_fontsize">23sp</dimen>
+</resources>

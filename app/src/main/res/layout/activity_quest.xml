@@ -4,6 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E98DE1EC"
     tools:context=".QuestActivity">
+
+    <TextView
+        android:id="@+id/QueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Title_queText"
+        android:textSize="@dimen/Title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answerButton"
+        android:layout_width="@dimen/answerbutton_width"
+        android:layout_height="@dimen/answerbutton_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E6A279EC"
+        android:text="@string/answerbuttonText"
+        android:textSize="@dimen/answerbutton_fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/corButton"
+        android:layout_width="@dimen/selectbutton_width"
+        android:layout_height="@dimen/selectbutton_height"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:background="#E6208EE9"
+        android:text="@string/corbuttonText"
+        android:textSize="@dimen/selectbutton_fontsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/missButton"
+        app:layout_constraintTop_toBottomOf="@+id/QueTitle" />
+
+    <Button
+        android:id="@+id/missButton"
+        android:layout_width="@dimen/selectbutton_width"
+        android:layout_height="@dimen/selectbutton_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:background="#E6F54646"
+        android:text="@string/missbuttonText"
+        android:textSize="@dimen/selectbutton_fontsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QueTitle" />
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="@dimen/selectbutton_width"
+        android:layout_height="@dimen/selectbutton_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:background="#E65DC261"
+        android:text="@string/quizbuttonText"
+        android:textSize="@dimen/selectbutton_fontsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/missButton" />
+
+    <Button
+        android:id="@+id/clapButton"
+        android:layout_width="@dimen/selectbutton_width"
+        android:layout_height="@dimen/selectbutton_height"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="#E6F1E365"
+        android:text="@string/clapbuttonText"
+        android:textSize="@dimen/selectbutton_fontsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/quizButton"
+        app:layout_constraintTop_toBottomOf="@+id/corButton" />
+
+    <ImageView
+        android:id="@+id/pyoko2"
+        android:layout_width="@dimen/pyoko_width"
+        android:layout_height="@dimen/pyoko_height"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/pyoko2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,15 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#E98DE1EC"
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/AnsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/Title_ansText"
+        android:textSize="@dimen/Title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pyoko1"
+        android:layout_width="@dimen/pyoko_width"
+        android:layout_height="@dimen/pyoko_height"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnsTitle"
+        app:srcCompat="@drawable/pyoko1" />
+
+    <Button
+        android:id="@+id/ansButton"
+        android:layout_width="@dimen/ansbutton_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#E6F7EC94"
+        android:text="@string/ansbuttonText"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pyoko1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pyoko1" />
+
+    <Button
+        android:id="@+id/questButton"
+        android:layout_width="@dimen/questbutton_width"
+        android:layout_height="@dimen/questbutton_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E6A279EC"
+        android:text="@string/questbuttonText"
+        android:textSize="@dimen/questbutton_fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

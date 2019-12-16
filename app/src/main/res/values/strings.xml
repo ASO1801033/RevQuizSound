@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">RevQuizSound</string>
+    <string name="Title_ansText">解答くん</string>
+    <string name="ansbuttonText">答える</string>
+    <string name="questbuttonText">出題くん</string>
+    <string name="Title_queText">出題くん</string>
+    <string name="answerbuttonText">解答くん</string>
+    <string name="missbuttonText">まちがい</string>
+    <string name="corbuttonText">せいかい</string>
+    <string name="quizbuttonText">しゅつだい</string>
+    <string name="clapbuttonText">はくしゅ</string>
 </resources>
