@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <!-- アクションバーの背景色(アプリ名が入っている部分) -->
+    <color name="colorPrimary">#5983FD</color>
+
+    <!-- ステータスバーの背景色(時間とかの部分) -->
+    <color name="colorPrimaryDark">#8BC34A</color>
+
+    <!-- UIコントロールの基本色 -->
     <color name="colorAccent">#D81B60</color>
 </resources>
