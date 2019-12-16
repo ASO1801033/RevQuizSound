@@ -73,7 +73,7 @@ class QuestActivity : AppCompatActivity() {
             soundPool.play(quizsound, 1.0f, 1.0f, 0, 0, 1.0f)
         }
 
-        //corsoundをロードしておく
+        //clapsoundをロードしておく
         clapsound = soundPool.load(this, R.raw.clapsound, 1)
 
         //拍手ボタンが押された時
