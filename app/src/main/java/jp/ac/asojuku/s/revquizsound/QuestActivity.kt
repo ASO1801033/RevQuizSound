@@ -1,14 +1,11 @@
 package jp.ac.asojuku.s.revquizsound
 
-import android.content.Intent
 import android.media.AudioAttributes
 import android.media.AudioManager
-import android.media.MediaPlayer
 import android.media.SoundPool
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_quest.*
 
 class QuestActivity : AppCompatActivity() {
@@ -46,17 +43,12 @@ class QuestActivity : AppCompatActivity() {
                     .build() //ビルド
             }
 
-        //misssoundをロードしておく
-        misssound = soundPool.load(this, R.raw.misssound, 1)
-
         //間違いボタンが押された時
         missButton.setOnClickListener{
             //play(ロードしたID, 左音量, 右音量, 優先度, ループ, 再生速度)
             soundPool.play(misssound, 1.0f, 1.0f, 0, 0, 1.0f)
         }
 
-        //corsoundをロードしておく
-        corsound = soundPool.load(this, R.raw.corsound, 1)
 
         //正解ボタンが押された時
         corButton.setOnClickListener {
@@ -64,22 +56,32 @@ class QuestActivity : AppCompatActivity() {
             soundPool.play(corsound, 1.0f, 1.0f, 0, 0, 1.0f)
         }
 
-        //quizsoundをロードしておく
-        quizsound = soundPool.load(this, R.raw.quizsound, 1)
-
         //出題ボタンが押された時
         quizButton.setOnClickListener {
             //play(ロードしたID, 左音量, 右音量, 優先度, ループ, 再生速度)
             soundPool.play(quizsound, 1.0f, 1.0f, 0, 0, 1.0f)
         }
 
-        //clapsoundをロードしておく
-        clapsound = soundPool.load(this, R.raw.clapsound, 1)
-
         //拍手ボタンが押された時
         clapButton.setOnClickListener {
             //play(ロードしたID, 左音量, 右音量, 優先度, ループ, 再生速度)
             soundPool.play(clapsound, 1.0f, 1.0f, 0, 0, 1.0f)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        soundPool = SoundPool(2, AudioManager.STREAM_ALARM, 0)
+        misssound = soundPool.load(this, R.raw.misssound, 1)
+        corsound = soundPool.load(this, R.raw.corsound, 1)
+        quizsound = soundPool.load(this, R.raw.quizsound, 1)
+        clapsound = soundPool.load(this, R.raw.clapsound, 1)
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        soundPool.release()
     }
 }
